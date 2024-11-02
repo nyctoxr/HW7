@@ -8,7 +8,7 @@ public class Database {
     private Author activeAuthor;
     private final Category[] categories;
     private final Article[] articles;
-    private final Article[] unpublishedArticle;
+    public final Article[] unpublishedArticle;
     private Moderator moderator;
     private int authorCount;
     private int categoryCount;
@@ -189,5 +189,8 @@ public class Database {
         }
         public Moderator getModerator() {
         return moderator;
+        }
+        public Article[] getUnpublishedArticleCount () {
+        return unpublishedArticle;
         }
 }
